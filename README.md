@@ -1,0 +1,2 @@
+# flarum-ext-hungarian
+beta
