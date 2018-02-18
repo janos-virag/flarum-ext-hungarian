@@ -207,7 +207,7 @@ core:
     # These translations are used by the composer when editing a post.
     composer_edit:
       discard_confirmation: "Nem mentetted el a változásokat. Biztos nem mented el?"
-      post_link: "Kérdés #{number} ebben: {discussion}"
+      post_link: "Kérdés #{number} itt: {discussion}"
       submit_button: => core.ref.save_changes
 
     # These translations are used by the composer when replying to a discussion.
@@ -215,24 +215,24 @@ core:
       body_placeholder: => core.ref.write_a_reply
       discard_confirmation: "Nem küldted el a válaszod. Biztos nem akarod?"
       posted_message: A válaszod elküldve.
-      submit_button: Válasz írása
+      submit_button: Válasz elküldése
       view_button: Megnézem
 
     # These translations are used by the discussion control buttons.
     discussion_controls:
-      cannot_reply_button: Nem tudsz válaszolni
+      cannot_reply_button: Zárolva
       cannot_reply_text: Nincs jogod, hogy válaszolj a kérdésre.
       delete_button: => core.ref.delete
       delete_confirmation: "Biztos vagy benne, hogy törlöd ezt a kérdést?"
       delete_forever_button: => core.ref.delete_forever
-      log_in_to_reply_button: Lépj be, hogy válaszolj
+      log_in_to_reply_button: Jelentkezz be
       rename_button: => core.ref.rename
       reply_button: => core.ref.reply
       restore_button: => core.ref.restore
 
     # These translations are used in the discussion list.
     discussion_list:
-      empty_text: Nincs találat.
+      empty_text: Nincs még kérdés. Törd meg a jeget, és kérdezz.
       load_more_button: => core.ref.load_more
       mark_as_read_tooltip: Megjelölés olvasottként
       replied_text: "{username} válaszolt {ago}"
@@ -269,7 +269,7 @@ core:
       log_in_link: => core.ref.log_in
       log_out_button: => core.ref.log_out
       profile_button: Adatlap
-      search_placeholder: Keresés az oldalon...
+      search_placeholder: Keresés a témákban...
       settings_button: => core.ref.settings
       sign_up_link: => core.ref.sign_up
 
@@ -284,11 +284,11 @@ core:
 
     # These translations are used by the sorting control above the discussion list.
     index_sort:
-      latest_button: Új hozzászólások
+      latest_button: Legújabb hozzászólások
       newest_button: Legújabb kérdések
       oldest_button: Legrégebbi kérdések
       relevance_button: Legrelevánsabb kérdések
-      top_button: Legnépszerűbb kérdések
+      top_button: Legtöbbet hozzászólt kérdések
 
     # These translations are used in the Log In modal dialog.
     log_in:
@@ -296,10 +296,10 @@ core:
       invalid_login_message: A belépési adataid nem megfelelőek.
       password_placeholder: => core.ref.password
       remember_me_label: Emlékezz rám
-      sign_up_text: "Nincs még fiókod? <a>Regisztráció</a>"
+      sign_up_text: "Nincs még fiókod? <a>Regisztrálj itt</a>"
       submit_button: => core.ref.log_in
       title: => core.ref.log_in
-      username_or_email_placeholder: becenév vagy email
+      username_or_email_placeholder: Felhasználónév vagy E-mail
 
     # These translations are used by the Notifications dropdown, a.k.a. "the bell".
     notifications:
@@ -313,7 +313,7 @@ core:
     post:
       edited_text: Szerkesztve
       edited_tooltip: "{username} szerkesztette {ago}"
-      number_tooltip: "Válasz #{number}"
+      number_tooltip: "Neki válaszolok: "
 
     # These translations are used by the post control buttons.
     post_controls:
@@ -327,7 +327,7 @@ core:
       now_link: Most
       original_post_link: Eredeti kérdés
       unread_text: "{count} olvasatlan"
-      viewing_text: "{index}. / {count}. válasz|{index}. / {count}. válasz"
+      viewing_text: "{index} / {count} válasz|{index} / {count} válasz"
 
     # These translations are displayed between posts in the post stream.
     post_stream:
@@ -350,15 +350,15 @@ core:
 
     # These translations are used in the Settings page.
     settings:
-      account_heading: Profil
+      account_heading: Adatlapom
       change_email_button: => core.ref.change_email
       change_password_button: => core.ref.change_password
       notifications_heading: => core.ref.notifications
       notify_by_email_heading: => core.ref.email
       notify_by_web_heading: Web
       notify_discussion_renamed_label: Valaki szerkesztett a kérdésen, amit elindítottam
-      privacy_disclose_online_label: Látható, hogy mikor vagyok online
-      privacy_heading: Adatbiztonság
+      privacy_disclose_online_label: Látható, hogy mikor vagyok elérhető
+      privacy_heading: Személyes
       title: => core.ref.settings
 
     # These translations are used in the Sign Up modal dialog.
@@ -375,7 +375,7 @@ core:
     # These translations are used in the user profile page and profile popup.
     user:
       avatar_remove_button: Eltávolítás
-      avatar_upload_button: Feltöltés
+      avatar_upload_button: Kép lecserélése
       avatar_upload_tooltip: Új kép feltöltése
       bio_placeholder: Írj valamit magadról...
       discussions_link: => core.ref.discussions
@@ -414,7 +414,7 @@ core:
     error:
       generic_message: "Hoppá! Valami hiba történt. Próbáld meg újratölteni az oldalt."
       not_found_message: A kért forrás nem található.
-      permission_denied_message: Nincs jogosultságod ezt csinálni.
+      permission_denied_message: Nincs jogosultságod ehhez a művelethez.
       rate_limit_exceeded_message: Úgy tűnik, túl gyors voltál. Várj néhány másodpercet.
 
     # These translations are used as suffixes when abbreviating numbers.
@@ -435,7 +435,7 @@ core:
     content:
       javascript_disabled_message: Ez az oldal legjobban egy modern böngészőben fut JavaScript támogatással.
       load_error_message: Valami hiba történt, miközben próbáltad betölteni ezt az oldalt.
-      loading_text: Töltés...
+      loading_text: Betöltés...
 
     # Translations in this namespace are displayed in the basic HTML discussion view.
     discussion:
@@ -506,33 +506,33 @@ core:
 
   # Translations in this namespace are referenced by two or more unique keys.
   ref:
-    all_discussions: Összes téma
+    all_discussions: Összes kérdés
     change_email: Email megváltoztatása
     change_password: Jelszó megváltoztatása
     confirm_password: Jelszó visszaigazolása
     confirmation_email_sent: "Elküldtünk egy visszaigazoló emailt ide: {email}. Ha nem érkezne meg, ellenőrizd le a spam mappát is."
     delete: Törlés
-    delete_forever: Törlés véglegesen
-    discussions: Témák
+    delete_forever: Végleges törlés
+    discussions: Kérdések
     edit: Szerkesztés
     email: Email
-    load_more: Továbbiak
-    log_in: Bejelentkezés
+    load_more: További kérdések
+    log_in: Belépés
     log_out: Kijelentkezés
     mark_all_as_read: Összes megjelölése olvasottként
     next_page: Következő oldal
     notifications: Értesítések
-    okay: Oké                                     # Referenced by flarum-tags.yml
+    okay: Rendben                                     # Referenced by flarum-tags.yml
     password: Jelszó
     rename: Szerkesztés
-    reply: Válasz                                 # Referenced by flarum-mentions.yml
+    reply: Válasz írása                                 # Referenced by flarum-mentions.yml
     reset_your_password: Jelszó megváltoztatása
     restore: Visszaállítás
-    save_changes: Mentés                   # Referenced by flarum-suspend.yml, flarum-tags.yml
+    save_changes: Módosítások mentése                   # Referenced by flarum-suspend.yml, flarum-tags.yml
     settings: Beállítások
     sign_up: Regisztráció
     some_others: "{count} ember|{count} ember"  # Referenced by flarum-likes.yml, flarum-mentions.yml
-    start_a_discussion: Párbeszéd indítása
+    start_a_discussion: Kérdésem beküldése
     username: Felhasználónév
     write_a_reply: Válasz írása...
     you: Te                                     # Referenced by flarum-likes.yml, flarum-mentions.yml

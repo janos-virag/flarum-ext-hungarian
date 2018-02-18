@@ -1,0 +1,12 @@
+flarum-best-answer:
+    admin:
+        permissions:
+            best_answer: => flarum-best-answer.ref.best_answer
+    forum:
+        this_best_answer: "Ez a megoldás"
+        remove_best_answer: "Mégsem ez a megoldás"
+        header_best_answer: "A kérdező szerint ez megoldás volt a kérdésére"
+        best_answer_button: => flarum-best-answer.ref.best_answer
+        best_answer: => flarum-best-answer.ref.best_answer
+    ref:
+      best_answer: 'Megoldás a kérdezőnek'

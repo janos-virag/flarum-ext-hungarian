@@ -1,0 +1,13 @@
+davis-socialprofile:
+  forum:
+    edit:
+      edit: "Szerkesztés"
+      add: "Hozzáadás"
+      headtitle: "Címek szerkesztése"
+      title: "Cím"
+      url: "Webcím"
+      submit: "Mentés"
+      delete: "Törlés"
+      deletetitle: "Cím törlése"
+  admin:
+    test: "Teszt"

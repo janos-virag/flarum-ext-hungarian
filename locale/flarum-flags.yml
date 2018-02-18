@@ -25,12 +25,12 @@ flarum-flags:
       confirmation_message: Köszönjük a visszajelzést. Moderátoraink hamarosan felülvizsgálják a bejelentésedet.
       dismiss_button: => core.ref.okay
       reason_inappropriate_label: Nem megfelelő stílus
-      reason_inappropriate_text: "Ez a bejegyzés személyeskedő, szándékosan sértő, részben vagy egészében nem felel meg a Vitatom.hu <a href="https://www.vitatom.hu/p/2-szabalyzat">szabályzatának</a>."
-      reason_off_topic_label: "Nem vág a témába (off-topic)"
-      reason_off_topic_text: Ez a bejegyzés nem releváns, máshol talán több haszna lenne.
+      reason_inappropriate_text: "Ez a bejegyzés személyeskedő, szándékosan sértő, részben vagy egészében nem felel meg a honlap szabályzatával."
+      reason_off_topic_label: "Nincs köze a témához (off-topic)"
+      reason_off_topic_text: Ez a hozzászólás nem releváns, máshol talán több haszna lenne, de nem itt.
       reason_other_label: Egyéb
       reason_spam_label: Spam
-      reason_spam_text: Ez egyértelmű reklám.
+      reason_spam_text: Burkolt, vagy egyértelmű reklám.
       submit_button: => flarum-flags.ref.flag_post
       title: => flarum-flags.ref.flag_post
 
