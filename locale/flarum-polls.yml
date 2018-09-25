@@ -1,0 +1,19 @@
+reflar-polls:
+  forum:
+    modal:
+      min: Legalább 2 választ meg kell adnod
+      max: Legfeljebb 10 választ adhatsz meg
+      include_question: Fel kell tenned egy kérdést
+      answer_placeholder: Válasz
+      add: Válasz hozzáadása
+      question_placeholder: Kérdés
+      add_title: Szavazás készítése
+      edit_title: Szavazás készítése
+      answers: Válaszok
+    moderation:
+      edit: Szavazás szerkesztése
+      delete: Szavazás törlése
+      delete_confirm: Biztos vagy benne, hogy törlöd ezt a szavazást?
+    composer_discussion:
+      add_poll: Szavazás
+      edit: => reflar-polls.forum.moderation.edit

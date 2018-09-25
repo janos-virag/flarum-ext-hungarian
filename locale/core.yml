@@ -198,9 +198,9 @@ core:
 
     # These translations are used by the composer when starting a discussion.
     composer_discussion:
-      body_placeholder: Itt kifejtheted a gondolataidat...
-      discard_confirmation: "Nem küldted el a kérdésed. Biztos nem küldöd el?"
-      submit_button: Kérdés elküldése
+      body_placeholder: Itt fejtsd ki részletesebben...
+      discard_confirmation: "Nem küldted el a kérdésedet. Biztos nem küldöd el?"
+      submit_button: Kérdésem elküldése
       title: => core.ref.start_a_discussion
       title_placeholder: Mi a kérdésed?
 
@@ -220,12 +220,12 @@ core:
 
     # These translations are used by the discussion control buttons.
     discussion_controls:
-      cannot_reply_button: Zárolva
+      cannot_reply_button: Téma lezárva
       cannot_reply_text: Nincs jogod, hogy válaszolj a kérdésre.
       delete_button: => core.ref.delete
       delete_confirmation: "Biztos vagy benne, hogy törlöd ezt a kérdést?"
       delete_forever_button: => core.ref.delete_forever
-      log_in_to_reply_button: Jelentkezz be
+      log_in_to_reply_button: Szólj hozzá Te is
       rename_button: => core.ref.rename
       reply_button: => core.ref.reply
       restore_button: => core.ref.restore
@@ -284,11 +284,11 @@ core:
 
     # These translations are used by the sorting control above the discussion list.
     index_sort:
-      latest_button: Legújabb hozzászólások
-      newest_button: Legújabb kérdések
-      oldest_button: Legrégebbi kérdések
-      relevance_button: Legrelevánsabb kérdések
-      top_button: Legtöbbet hozzászólt kérdések
+      latest_button: Új válaszok
+      newest_button: Új kérdések
+      oldest_button: Régi kérdések
+      relevance_button: Releváns kérdések
+      top_button: Legválaszoltabb kérdések
 
     # These translations are used in the Log In modal dialog.
     log_in:
@@ -299,11 +299,11 @@ core:
       sign_up_text: "Nincs még fiókod? <a>Regisztrálj itt</a>"
       submit_button: => core.ref.log_in
       title: => core.ref.log_in
-      username_or_email_placeholder: Felhasználónév vagy E-mail
+      username_or_email_placeholder: Felhasználónév vagy Email
 
     # These translations are used by the Notifications dropdown, a.k.a. "the bell".
     notifications:
-      discussion_renamed_text: "{username} megváltoztatta a kérdés címét"
+      discussion_renamed_text: "{username} megváltoztatta a kérdésed címét"
       empty_text: Nincsenek értesítések
       mark_all_as_read_tooltip: => core.ref.mark_all_as_read
       title: => core.ref.notifications
@@ -332,10 +332,10 @@ core:
     # These translations are displayed between posts in the post stream.
     post_stream:
       discussion_renamed_old_tooltip: 'Az eredeti kérdés ez volt: "{old}"'
-      discussion_renamed_text: "{username} megváltoztatta a kérdés címét erre: {new}."
-      load_more_button: => core.ref.load_more
+      discussion_renamed_text: "{username} megváltoztatta a kérdés címét erre: {new}"
+      load_more_button: "További válaszok"
       reply_placeholder: => core.ref.write_a_reply
-      time_lapsed_text: "{period} később"
+      time_lapsed_text: "{period} kihagyás"
 
     # These translations are used by the rename discussion modal.
     rename_discussion:
@@ -356,7 +356,7 @@ core:
       notifications_heading: => core.ref.notifications
       notify_by_email_heading: => core.ref.email
       notify_by_web_heading: Web
-      notify_discussion_renamed_label: Valaki szerkesztett a kérdésen, amit elindítottam
+      notify_discussion_renamed_label: Valaki szerkesztett a kérdéseden, amit elindítottam
       privacy_disclose_online_label: Látható, hogy mikor vagyok elérhető
       privacy_heading: Személyes
       title: => core.ref.settings
@@ -365,7 +365,7 @@ core:
     sign_up:
       email_placeholder: => core.ref.email
       dismiss_button: => core.ref.okay
-      log_in_text: "Van már egy fiókod? <a>Bejelentkezés</a>"
+      log_in_text: "Van már egy fiókod? <a>Jelentkezz be</a>"
       password_placeholder: => core.ref.password
       submit_button: => core.ref.sign_up
       title: => core.ref.sign_up
@@ -467,38 +467,44 @@ core:
       body: |
         Szia {username}!
 
-        Valaki (remélhetőleg te!) regisztrált a {forum} címen ezzel az email címmel.
+        Valaki (remélhetőleg te!) regisztrált a Vitatom.hu honlapon ezzel az email címmel.
 
         Ha te voltál, kattints a következő linkre, hogy aktiváld a profilod:
         {url}
 
-        Ha nem te regisztráltál, akkor kérlek hagyd figyelmen kívül ezt az emailt.
+        Ha nem te voltál, akkor kérlek hagyd figyelmen kívül ezt az emailt.
+        
+        Ez egy automatikusan generált üzenet, nem kell válaszolni rá.
 
     # These translations are used in emails sent when users change their email address.
     confirm_email:
-      subject: Confirm Your New Email Address
+      subject: Email cím megváltoztatása
       body: |
-        Hey {username}!
+        Szia {username}!
 
-        Someone (hopefully you!) has changed their email address on {forum} to this one.
+        Valaki (remélhetőleg te!) kérte az email címe megváltoztatását a Vitatom.hu honlapon.
 
-        If this was you, simply click the following link and your email will be confirmed:
+        Ha te voltál, kattints a következő linkre, hogy megváltoztasd az email címet:
         {url}
 
-        If this was not you, please ignore this email.
+        Ha nem te voltál, akkor kérlek hagyd figyelmen kívül ezt az emailt.
+        
+        Ez egy automatikusan generált üzenet, nem kell válaszolni rá.
 
     # These translations are used in emails sent when users ask to reset their passwords.
     reset_password:
       subject: => core.ref.reset_your_password
       body: |
-        Hey {username}!
+        Szia {username}!
 
-        Someone (hopefully you!) has submitted a forgotten password request for your account on {forum}.
+        Valaki (remélhetőleg te!) kérte a jelszava megváltoztatását a Vitatom.hu honlapon.
 
-        If this was you, click the following link to reset your password:
+        Ha te voltál, kattints a következő linkre, hogy megváltoztasd a jelszót:
         {url}
 
-        If you do not wish to change your password, just ignore this email and nothing will happen.
+        Ha nem te voltál, akkor kérlek hagyd figyelmen kívül ezt az emailt.
+        
+        Ez egy automatikusan generált üzenet, nem kell válaszolni rá.
 
   ##
   # REUSED TRANSLATIONS - These keys should not be used directly in code!
@@ -516,7 +522,7 @@ core:
     discussions: Kérdések
     edit: Szerkesztés
     email: Email
-    load_more: További kérdések
+    load_more: Továbbiak betöltése
     log_in: Belépés
     log_out: Kijelentkezés
     mark_all_as_read: Összes megjelölése olvasottként
@@ -532,7 +538,7 @@ core:
     settings: Beállítások
     sign_up: Regisztráció
     some_others: "{count} ember|{count} ember"  # Referenced by flarum-likes.yml, flarum-mentions.yml
-    start_a_discussion: Kérdésem beküldése
+    start_a_discussion: Diskurzus indítása
     username: Felhasználónév
     write_a_reply: Válasz írása...
     you: Te                                     # Referenced by flarum-likes.yml, flarum-mentions.yml

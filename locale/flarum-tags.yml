@@ -61,7 +61,7 @@ flarum-tags:
       choose_secondary_placeholder: "Válassz hozzá legalább egy alkategóriát|Válassz még {count} alkategóriát"
       edit_title: "Téma címkéinek szerkesztése ennek: {title}"
       submit_button: => core.ref.okay
-      title: Válassz témát a kérdésedhez
+      title: Válassz egy témát
 
     # These translations are used by the composer when starting a discussion.
     composer_discussion:
@@ -79,10 +79,10 @@ flarum-tags:
 
     # These translations are displayed between posts in the post stream.
     post_stream:
-      added_tags_text: "{username} hozzáadta a {tagsAdded} témát."
-      added_and_removed_tags_text: "{username} hozzáadta a {tagsAdded} témát és törölte ezt: {tagsRemoved}."
-      removed_tags_text: "{username} törölte a {tagsRemoved} témát."
-      tags_text: "{tags} téma|{tags} téma"
+      added_tags_text: "{username} hozzáadta a(z) {tagsAdded}."
+      added_and_removed_tags_text: "{username} hozzáadta a(z) {tagsAdded} és törölte a(z) {tagsRemoved}."
+      removed_tags_text: "{username} törölte a(z) {tagsRemoved}."
+      tags_text: "{tags} témát|{tags} témákat"
 
   # Translations in this namespace are used by the forum and admin interfaces.
   lib:
@@ -98,4 +98,4 @@ flarum-tags:
   ref:
     create_tag: Téma készítése
     name: Név
-    tags: Témák
+    tags: Részletes nézet

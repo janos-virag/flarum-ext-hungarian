@@ -18,7 +18,7 @@ function translate(number, withoutSuffix, key, isFuture) {
        case 'hh':
            return num + (isFuture || withoutSuffix ? ' óra' : ' órája');
        case 'd':
-           return 'egy' + (isFuture || withoutSuffix ? ' nap' : ' napja');
+           return 'tegnap';
        case 'dd':
            return num + (isFuture || withoutSuffix ? ' nap' : ' napja');
        case 'M':

@@ -1,0 +1,17 @@
+core:
+  forum:
+    index_sort:
+      popular_button: Népszerű kérdések
+      unpopular_button: Elfeledett kérdések
+
+flarum_discussion_views:
+  forum:
+    modal_resetviews:
+      title: Nézettségszám
+      submit: Mentés
+      label: Nézettségszám beállítása
+    discussion_controls:
+      resetviews_button: Nézettség
+  admin:
+      permissions:
+          reset_views_label: Set discussion views

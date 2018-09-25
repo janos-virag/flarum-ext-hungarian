@@ -17,13 +17,13 @@ flarum-likes:
     # These translations are used by the Notifications dropdown, a.k.a. "the bell".
     notifications:
       others_text: => core.ref.some_others
-      post_liked_text: "{username} felhasználónak tetszik a hozzászólásod"  # Can be pluralized to agree with the number of users!
+      post_liked_text: "{username} kedveli a hozzászólásodat"  # Can be pluralized to agree with the number of users!
 
     # These translations are displayed beneath individual posts.
     post:
       like_link: Tetszik
-      liked_by_self_text: "{users} kedveled.|{users} kedvelik."  # Can be pluralized to agree with the number of users!
-      liked_by_text: "{users} kedveli.|{users} kedvelik."
+      liked_by_self_text: "{users} kedveled|{users} kedvelitek"  # Can be pluralized to agree with the number of users!
+      liked_by_text: "{users} kedveli|{users} kedveli"
       others_link: => core.ref.some_others
       unlike_link: Mégsem tetszik
       you_text: => core.ref.you

@@ -74,8 +74,8 @@ validation:
     username: felhasználónév
     password: jelszó
     email: email
-    title: cím
-    content: tartalom
+    title: kérdés
+    content: kérdés részletes kifejtése szövegmező
     name_singular: singular name
     name_plural: plural name
     tag_count_primary: number of primary tags
